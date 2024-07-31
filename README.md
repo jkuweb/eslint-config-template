@@ -24,23 +24,23 @@
 
 Include in package.json
 
-```
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.{css, scss}": [
-			"stylelint --fix",
-			"prettier --write"
-		],
-		"*.{js,jsx,tsx,ts}": [
-			"eslint --fix",
-			"prettier --write",
-			"tsc --noEmit"
-		]
-	}
+```JSON
+ "husky": {
+  "hooks": {
+   "pre-commit": "lint-staged"
+  }
+ },
+ "lint-staged": {
+  "*.{css, scss}": [
+   "stylelint --fix",
+   "prettier --write"
+  ],
+  "*.{js,jsx,tsx,ts}": [
+   "eslint --fix",
+   "prettier --write",
+   "tsc --noEmit"
+  ]
+ }
 ```
 
 ## 🍄commitlint🍄
@@ -49,3 +49,9 @@ Include in package.json
   <a href="https://commitlint.js.org/reference/prompt.html#prompt"> CommitLint Prompt </a>
 - commitlint/config-conventional
   <a href="https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#commitlintconfig-conventional">commitlint/config-conventional<a/>
+
+## New Project
+
+```BASH
+npx degit jkuweb/eslint-config-templatemy-app
+```
