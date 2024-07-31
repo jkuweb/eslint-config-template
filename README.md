@@ -53,5 +53,5 @@ Include in package.json
 ## New Project
 
 ```BASH
-npx degit jkuweb/eslint-config-templatemy-app
+ npx degit jkuweb/eslint-config-template my-app
 ```
