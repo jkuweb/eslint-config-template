@@ -62,5 +62,11 @@
 		"commitizen": {
 			"path": "@commitlint/cz-commitlint"
 		}
-	}
+	},
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules"
+	]
 }

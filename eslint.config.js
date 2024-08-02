@@ -12,7 +12,12 @@ export default [
   pluginReact.configs.flat.recommended,
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-    ignores: ['dist/**/*', 'eslint.config.js', 'commitlint.config.js'],
+    ignores: [
+      'dist/**/*',
+      'eslint.config.js',
+      'commitlint.config.js',
+      'vite.config.js',
+    ],
     settings: {
       //version: "detect",
       react: {
@@ -49,6 +54,7 @@ export default [
       'no-template-curly-in-string': 'error',
       'no-unmodified-loop-condition': 'error',
       'no-unreachable-loop': 'error',
+      'no-control-regex': 'off',
       'no-unused-private-class-members': 'error',
       'no-use-before-define': [
         'error',
